@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Record</title>
+    <link rel="stylesheet" href="/editRecord.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+    <div id="main">
+    <form method="post" action="/saveEdit/<%= rollNo %>?_method=PUT" class="form-inline">
+
+        <label class="sr-only" for="rollNo">Roll Number</label>
+        <input type="number" class="form-control mb-2 mr-sm-2" id="rollNo" name="rollNo" value="<%= rollNo %>" readonly>
+
+        <label class="sr-only" for="name">Name</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="name" name="name" value="<%= name %>">
+
+        <!-- <label class="sr-only" for="rollNo">Roll Number</label>
+          <input type="number" class="form-control" id="rollNo" name="rollNo" value="" readonly="true">
+        <p></p> -->
+
+    
+        <label class="sr-only" for="dob">DOB</label>
+        <input type="date" class="form-control mb-2 mr-sm-2" id="dob" name="dob" value="<%= dob %>">
+
+        <label class="sr-only" for="score">Score</label>
+        <input type="number" class="form-control mb-2 mr-sm-2" id="score" name="score" value="<%= score %>">
+    
+        <button type="submit" class="btn btn-primary mb-2 position-absolute bottom-30 start-50 translate-middle-x">Save Result</button>
+      </form>
+      <br><br>
+      <a href="/teacher" style="color:blue">..back to list</a>
+    </div>
+</body>
+</html>

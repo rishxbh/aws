@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new record</title>
+    <link rel="stylesheet" href="/addNewRecord.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+    <div id = "main" class="position-relative">
+        <form action="/add" class="form-inline" method="post">
+    
+            <label class="sr-only" for="id">Roll Number</label>
+            <div class="input-group mb-2 mr-sm-2">
+              <input type="number" class="form-control" id="id" name = "rollNo" placeholder="1">
+            </div>
+    
+            <label class="sr-only" for="name">Name</label>
+            <input type="text" class="form-control mb-2 mr-sm-2" id="name" name = "name" placeholder="Student">
+        
+            <label class="sr-only" for="dob">DOB</label>
+            <input type="date" class="form-control mb-2 mr-sm-2" id="dob" name = "dob" placeholder="01-01-2000">
+    
+            <label class="sr-only" for="score">Score</label>
+            <input type="text" class="form-control mb-2 mr-sm-2" id="score" name = "score" placeholder="99">
+        
+            <button type="submit" class="btn btn-primary mb-2 position-absolute bottom-30 start-50 translate-middle-x">Add Result</button>
+          </form>
+          <br><br>
+          <a href="/teacher" style="color:blue">..back to list</a>
+    </div>
+</body>
+</html>

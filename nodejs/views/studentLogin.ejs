@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/studentLogin.css">
+</head>
+<body>
+    <div id="main">
+    <form action="/getVerified" method="post" class="form-inline">
+    
+        <label for="rollNo">Roll Number</label>
+        <div class="input-group mb-2 mr-sm-2">
+          <input type="number" class="form-control" id="rollNo" name="rollNo" placeholder="1">
+        </div>
+
+        <label for="name">DOB</label>
+        <input type="date" class="form-control mb-2 mr-sm-2" id="name" name="dob" placeholder="Student">
+    
+        <button type="submit" class="btn btn-primary mb-2">Check Result</button>
+        <p style="color: red;"><%= comment %></p> 
+    </form>
+    <a href="/" style="color:blue">..back to homepage</a>
+</div>
+</body>
+</html>
